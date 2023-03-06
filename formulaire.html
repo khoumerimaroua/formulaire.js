@@ -15,7 +15,7 @@
     
       <nav class="navbar navbar-expand-lg bg-body-tertiary ">
         <div class="container-fluid ">
-          <a class="navbar-brand" href="#">FORMULAIRE</a>
+          <a class="navbar-brand fs-2" href="#">Formulaire</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -24,13 +24,14 @@
             <div class="col-12">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                 <li class="nav-item ">
-                  <a class="nav-link  " aria-current="page" href="#">Home</a>
+                  <a class="nav-link fs-3 mt-2" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item ">
-                  <a class="nav-link" href="#">Private</a>
+                  <a href="private.html" id="link" target=_blank disabled> <button class="nav-link fs-3 btn btn mt-2" type="button"  id="submitBtn" disabled>Private</button> </a>
+                 <!-- <a href="private.html" id="link" target=_blank disabled> </a>  -->
                 </li>
                 <li class="nav-item ">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link fs-3 mt-2" href="#">Contact</a>
                 </li>
               </ul>
             </div>
@@ -38,6 +39,8 @@
         </div>
       </nav>
     
+        <h1> Formulaire d'inscription</h1>
+
       <form action="/" onsubmit="return validateForm()">
     
         <label for="fname">First Name</label>
@@ -52,13 +55,13 @@
         <label for="email">Email</label>
         <input id="email" type="email" name="email" placeholder="Email">
     
-        <input type="submit" value="Envoyer">
+        <input id="submit" type="submit" value="Envoyer">
     
       </form>
     
     
-      <footer class=bg-body-tertiary>
-        <p>LOGO </p>
+      <footer>
+        <img src="icone.jpg" alt="Icone">
         <ul>
           <li> <i class="fa-brands fa-github fa-3x"></i></li>
           <li> <i class="fa-brands fa-linkedin fa-3x"></i></li>
@@ -67,7 +70,7 @@
       </footer>
     
     </section>
-    
+   
         <script src="js/bootstrap.bundle.js"></script>
         <script src="main.js"></script>
     </body>
